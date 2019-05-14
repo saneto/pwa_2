@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.html",
   "scripts": {
+    "generate": "npx workbox generateSW",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -13,6 +14,7 @@
     "lit-element": "^2.1.0"
   },
   "devDependencies": {
+    "polymer-cli": "^1.9.9",
     "workbox-cli": "^4.3.1"
   }
 }
