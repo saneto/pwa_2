@@ -8,7 +8,7 @@
     {
       "id": 2,
       "content": "demain",
-      "done": false
+      "done": true
     },
     {
       "id": 3,
@@ -16,24 +16,14 @@
       "done": false
     },
     {
-      "content": "",
+      "content": "dqsdqsd",
       "done": false,
       "id": 4
     },
     {
-      "content": "",
+      "content": "dsdqsd sqd",
       "done": false,
       "id": 5
-    },
-    {
-      "content": "",
-      "done": false,
-      "id": 6
-    },
-    {
-      "content": "",
-      "done": false,
-      "id": 7
     }
   ]
 }

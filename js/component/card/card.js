@@ -76,13 +76,14 @@ li.checked {
   
   handleClick()
   {
-    console.log(this.shadowRoot.querySelector('li'));
     this.shadowRoot.querySelector('li').classList.toggle('checked');
   }
 
+
+  
   render() {
     return html`
-    <li class="li_list checked" @click="${this.handleClick}" id="todoElemt">     
+    <li class="li_list ${this.done?'checked':''} " @click="${this.handleClick}" id="todoElemt">     
         ${this.content} 
     </li>;
     `

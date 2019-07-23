@@ -34,6 +34,11 @@ import checkConnectivity from '/js/connection.js';
         }
         let button = document.getElementById("add");
         button.addEventListener("click", function(event){
+            const cardElement = new AppCard();
+      
+            cardElement.initCard(false,
+                document.querySelector("#item").value);
+            listPage.appendChild(cardElement);
             json.push({content:document.querySelector("#item").value, done:false});
             database.put('articles', json, 'articles');
             fetch('http://localhost:3000/todo', {
@@ -45,7 +50,12 @@ import checkConnectivity from '/js/connection.js';
             })
         });
 
-        /*let buttonDel = document.getElementById("delete");
+
+
+
+
+
+       /* let buttonDel = document.getElementById("delete");
         buttonDel.addEventListener("click", function(event){
                 fetch(`http://localhost:3000/todo/${id}`, {
                     method: 'DELETE',
